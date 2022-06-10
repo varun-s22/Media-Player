@@ -1,0 +1,53 @@
+#body{
+    -fx-background-image: url("./images/background.jpeg");
+    -fx-background-size: cover;
+}
+#title{
+    -fx-font-family: "Fira Code";
+    -fx-padding: 25px;
+    -fx-font-size: 60;
+    -fx-font-weight: 900;
+    -fx-text-fill: #b52222;
+}
+#subHeading{
+    -fx-font-family: "Fira Code";
+    -fx-padding: 80px;
+    -fx-font-size: 40;
+    -fx-font-weight: 500;
+    -fx-text-fill: #e6d8d8;
+}
+.Image{
+    -fx-padding: 20px;
+    -fx-max-height: 3px;
+    -fx-max-width: 3px;
+}
+#btns{
+    -fx-padding: 20;
+}
+#audioBtn,#videoBtn{
+    -fx-background-color: #911717;
+    -fx-background-radius: 40;
+    -fx-padding: 20;
+    -fx-max-height: 100;
+    -fx-max-width: 100;
+    -fx-cursor: hand;
+}
+#videoPlayerWindow,#fullScreenBtn,#playBtn,#pauseBtn,#backwardBtn,#forwardBtn,#volMuteBtn,#videoTitle{
+    -fx-background-color: black;
+    -fx-cursor: hand;
+}
+#fullScreenBtn,#fullScreenImg,#playBtn,#pauseBtn,#backwardBtn,#forwardBtn,#volMuteBtn{
+    -fx-min-height: 2;
+    -fx-min-width: 2;
+    -fx-fit-to-height: 2;
+    -fx-fit-to-width: 2;
+}
+#videoTitle,#timePassed,#totalTime{
+    -fx-text-fill: #e6d8d8;
+    -fx-font-family: "Fira Code";
+    -fx-font-weight: 400;
+    -fx-font-size: 20;
+}
+.slider .track{
+    -fx-background-color: #b52222;
+}

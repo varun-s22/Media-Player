@@ -1,0 +1,62 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<VBox fx:id="videoBox" id="videoPlayerWindow" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.player.playerScreenController" stylesheets="@styles.css" spacing="5">
+    <VBox alignment="CENTER" >
+        <MediaView fx:id="mediaView"/>
+        <Slider fx:id="timeSlider"/>
+    </VBox>
+    <HBox alignment="CENTER" spacing="50" fx:id="buttonControls">
+        <HBox spacing="3" alignment="CENTER">
+            <Button id="volMuteBtn" onAction="#muteAudio">
+                <graphic>
+                    <ImageView fx:id="volMuteBtn">
+                        <Image url="@images/volumeBtn.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Slider value="100" fx:id="volSlider" onDragDetected="#onVolSlide"/>
+        </HBox>
+        <HBox alignment="CENTER" spacing="8">
+            <Button id="backwardBtn" onAction="#backForward">
+                <graphic>
+                    <ImageView>
+                        <Image url="@images/backward.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button id="pauseBtn" onAction="#playPauseVideo">
+                <graphic>
+                    <ImageView fx:id="playPauseBtn">
+                        <Image url="@images/pauseBtn.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button id="forwardBtn" onAction="#fastForward">
+                <graphic>
+                    <ImageView>
+                        <Image url="@images/forward.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+        <HBox alignment="CENTER">
+            <HBox alignment="CENTER">
+                <Label fx:id="timePassed" id="timePassed"/>
+                <Label fx:id="totalTime" id="totalTime"/>
+            </HBox>
+        </HBox>
+        <Button id="fullScreenBtn" onAction="#fullScreen">
+            <graphic>
+                <ImageView id="fullScreenImg" fx:id="fullShrinkScreenImg">
+                    <Image url="@images/fullScreen.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+</VBox>
