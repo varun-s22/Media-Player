@@ -1,6 +1,6 @@
 # Media-Player
 
-A simple, elegant media player, to play your movies/songs.etc.
+A simple, elegant media player, to play your movies/songs.etc. One can play any format of audio/video media file, by clicking the right category.
 
 ## Requirements
 
