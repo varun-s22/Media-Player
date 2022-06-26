@@ -24,3 +24,6 @@ The opening window of the application
 
 ![](images/playerScreen.png)
 The player window
+
+You can also download the jar file from [here](http://media-player-drab.vercel.app/).
+The website is designed using Tailwind CSS. 
